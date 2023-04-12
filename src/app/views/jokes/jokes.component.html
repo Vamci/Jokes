@@ -1,0 +1,20 @@
+<div class="container">
+  <form [formGroup]="requestStatusForm">
+  <div class="input-group mt-5">
+    <input type="text" class="form-control" formControlName="count" placeholder="Enter No Of Jokes" aria-label="Recipient's username" aria-describedby="basic-addon2">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" type="button" (click)="submit()">Button</button>
+    </div>
+  </div>
+</form>
+
+
+<div *ngFor="let item of joke">
+
+  <h1>punchline</h1>
+  <small>{{item.punchline}}</small>
+  <br>
+  <h1>setup</h1>
+  <small>{{item.setup}}</small>
+</div>
+</div>
